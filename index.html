@@ -1,55 +1,52 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temlet 1</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Templet</title>
-    <link href="assets/css/style2.css" rel="stylesheet" > 
-</head>
-<body>
-  <div class="Navbar">
-    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-    <ul>
-      <li><a href="#">Templet</a></li>
-      <li><a href="#home" class="active">HOME</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#news">Skils </a></li>
-      <li><a href="#news">certifications </a></li>
-      <li><a href="#news">Projects </a></li>
-      <li><a href="#news">contact </a></li>
-      <li class="dropdown">
-        <a class="dropbtn">
-                  <img src="assets/img/profile-img.jpg">
-                  Ahmed Doban
-                  <span>web Developer</span>
-        </a>
-        <div class="dropdown-content">
-          <a href="#">Profile</a>
-          <a href="#">Setting</a>
-          <a href="#">Log Out
-          </a>
+  </head>
+  <body>
+    <!--Heder-->
+      <div class="header">
+        <div class="container">
+          <a href="#" class="logo"> Templet  1</a>
+          <ul class="main-navigation">
+              <li><a href="#">Home</a></li>
+              <li><a href="#About">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Other links</a></li>
+          </ul>
         </div>
-      </li>
-    </ul> 
-  </div>
+      </div>
+    <!--End Heder-->
 
-    <section class="Home" id="home">
-        <div class="grid-container">
-              <div class="left">
-                <img src="assets/img/profile-img.jpg">
-              </div>
-              <div class="right">
-                <h1>Ahmed Doban</h1>
-                <p>I started programming in 2019 until now. I am in the Faculty of Computers and Information. My current year grade GPA is 3.0. I am looking forward to becoming a web Developer.</p>
-              </div>
-            </div>
-    </section>
 
-        <section class="Data" id="about">
-         <div class="section-title">
-              <h1>About</h1>
-         </div>
-        </section>
-</body>
+    <!--Home Page-->
+    <div class="home">
+      <div class="container">
+        <div class="text">
+          <h1>Ahmed Doban</h1>
+          <p>I started programming in 2019 until now. I am in the Faculty of Computers and Information. My current year grade GPA is 3.0. I am looking forward to becoming a web Developer.</p>
+        </div>
+        <div class="img">
+          <img src="imgs/profile-img.jpg">
+        </div>
+      </div>
+      <a href="#About" class="Go-Down">
+        <i class="fas fa-angle-double-down fa-2x"></i>
+      </a>
+    </div>
+    <!--End-->
+    
+  </body>
 </html>
