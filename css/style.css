@@ -454,6 +454,8 @@ Feature
 .feature .box{
   text-align: center;
   border: 1px solid #ccc;
+  border-radius: 1rem;
+  overflow: hidden;
 }
 .feature .box .img-feature::before{
   position: absolute;
@@ -494,11 +496,12 @@ Feature
   height: 5px;
   bottom: -10px;
   left: 15px;
+  border-radius: 1rem;
 }
 
 .feature .box p {
     margin: 20px auto;
-    line-height: 1.7;
+    line-height: 2.5;
     font-size: 15px;
     color: #777;
     padding: 15px;
