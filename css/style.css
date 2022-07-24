@@ -16,6 +16,7 @@ General
  --main-padding-top:100px;
  --main-padding-bottom:100px;
  --main-background-color:#ececec;
+ --main-box-shadow:10px 12px 100px 10px rgb(255, 255, 255) inset;
 }
 html{
   scroll-behavior: smooth;
@@ -391,7 +392,7 @@ Gallary 2
   padding-bottom: var(--main-padding-bottom);
  position: relative;
  background-color:var(--main-background-color);
- box-shadow: 10px 12px 100px 10px rgb(255, 255, 255) inset;
+ box-shadow: var(--main-box-shadow);
 }
 .gallary-2 .container{
   display: grid;
@@ -570,7 +571,7 @@ About Us
   padding-bottom: var(--main-padding-bottom);
  position: relative;
  background-color:var(--main-background-color);
- box-shadow: 10px 12px 100px 10px rgb(255, 255, 255) inset;
+ box-shadow: var(--main-box-shadow);
 
 }
 .about-us .container{
@@ -711,7 +712,66 @@ Team page
 .team .box:hover .info h3{
   color:  #777;
 }
-
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+Services
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.services{
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+  background-color: var(--main-background-color);
+  position: relative;
+  box-shadow: var(--main-box-shadow);
+} 
+.services .container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  gap: 30px;
+}
+.services .box{
+  background-color: #fff;
+  box-shadow: var(--main-box-shadow);
+  position: relative;
+  transition: var(--main-transition);
+  counter-increment: services;
+}
+.services .box::before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  top: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--main-color);
+  transition: var(--main-transition);
+}
+.services .box:hover::before{
+width: 100%;
+}
+.services .box:hover{
+  transform: translateY(-10px);
+}
+.services .box > h3{
+  color: var(--main-color);
+  text-align: center;
+  font-size: 22px;
+  margin: 10px;
+}
+.services .box > i{
+  margin: 20px auto;
+  display: block;
+  text-align: center;
+  color: #d5d5d5;
+}
+.services .box .info{
+  padding: 20px;
+  text-align: right;
+  background-color: #f9f9f9f9;
+  position: relative;
+}
+.services .box .info a{
+  color: var(--main-color-hover);
+}
 /*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
 Animation
 ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
