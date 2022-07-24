@@ -733,13 +733,14 @@ Services
   position: relative;
   transition: var(--main-transition);
   counter-increment: services;
+  border-radius: .5rem;
 }
 .services .box::before{
   content: "";
   position: absolute;
   width: 0;
-  height: 3px;
-  top: -3px;
+  height: 5px;
+  top: 0px;
   left: 50%;
   transform: translateX(-50%);
   background-color: var(--main-color);
@@ -747,9 +748,12 @@ Services
 }
 .services .box:hover::before{
 width: 100%;
+border-top-left-radius:.5rem ;
+border-top-right-radius:.5rem ;
 }
 .services .box:hover{
   transform: translateY(-10px);
+
 }
 .services .box > h3{
   color: var(--main-color);
@@ -768,9 +772,40 @@ width: 100%;
   text-align: right;
   background-color: #f9f9f9f9;
   position: relative;
+  border-bottom-left-radius:.5rem ;
+  border-bottom-right-radius:.5rem ;
+  overflow: hidden;
 }
 .services .box .info a{
   color: var(--main-color-hover);
+}
+.services .box .info::before{
+  content: "0" counter(services);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 80px;
+  height: 100%;
+  background-color: var(--main-color);
+  left: 0;
+  top: 0;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  padding-right: 15px;
+  transition: var(--main-transition);
+}
+.services .box .info::after{
+  content: "";
+  position: absolute;
+  width: 50px;
+  left: 80px;
+  background-color: #d5d5d5;
+  height: 100%;
+  top:0;
+  transform: skewX(-30deg);
+  transition: var(--main-transition);
 }
 /*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
 Animation
