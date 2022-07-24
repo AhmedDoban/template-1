@@ -562,6 +562,64 @@ Feature
   background-position: left bottom;
   color: #fff;
 }
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+About Us
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.about-us{
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+ position: relative;
+ background-color:var(--main-background-color);
+ box-shadow: 10px 12px 100px 10px rgb(255, 255, 255) inset;
+
+}
+.about-us .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 40px;
+    row-gap: 70px;
+}
+.about-us .box{
+  padding: 20px;
+  background-color: #ddd;
+  box-shadow: 0 2px 15px rgba(251, 251, 251) inset;
+  border-radius: .5rem;
+  position: relative;
+
+}
+.about-us .box img{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: -10px;
+  top: -50px;
+  border-radius: 50%;
+  border: 5px solid var(--main-background-color);
+
+}
+.about-us .box h3{
+  color: var(--main-color);
+  margin: 0 0 10px;
+}
+.about-us .box span{
+  color: #777;
+  margin:10px 0px 20px 10px ;
+  display: block;
+}
+.about-us .box .rate{
+  margin: 10px;
+}
+.about-us .box .rate .filled{
+    color: #ffc107;
+}
+.about-us .box p{
+  margin: 5px auto;
+  line-height: 1.5;
+  font-size: 15px;
+  color: rgb(36, 36, 36);
+  padding: 15px;
+}
+
 
 /*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
 Animation
