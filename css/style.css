@@ -808,6 +808,16 @@ border-top-right-radius:.5rem ;
   transition: var(--main-transition);
 }
 /*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+our skills
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.our-skills{
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+  position: relative;
+  background-color: #Fff;
+}
+
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
 Animation
 ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
 @keyframes move-up {
