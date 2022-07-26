@@ -95,7 +95,7 @@ transition: var(--main-transition);
   animation: title-right-move .5s linear forwards;
 }
 .main-title:hover{
-  color: #727272;
+  color: #fff;
   border: none;
   overflow: hidden;
   transition-delay: 0.5s;
@@ -903,9 +903,6 @@ Animation
     border-radius: 1rem;
     width: 100%;
     height: 100%;
-    top: 0;
-    transform-origin: top left;
-    transform: skewY(-8deg) translateY(-15px) scale(1.2);
   }
 }
 @keyframes title-right-move {
@@ -913,16 +910,12 @@ Animation
     right: 0;
     width: 12px;
     height: 12px;
-    background-color: yellow;
   }
   100% {
     right: 0;
     border-radius: 1rem;
     width: 100%;
     height: 100%;
-    transform-origin: bottom right;
-    transform: skewX(-20deg) translateY(10px) scale(1.2);
-    background-color: yellow;
   }
 }
 @keyframes flashing {
