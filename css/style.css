@@ -816,6 +816,11 @@ our skills
   position: relative;
   background-color: #Fff;
 }
+.our-skills .container{
+  display: flex;
+  align-items: center;
+}
+
 
 /*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
 Animation
