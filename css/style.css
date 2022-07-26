@@ -828,10 +828,14 @@ our skills
 .our-skills .skills{
   flex: 1;
 }
+.our-skills .skill{
+  margin: 10px;
+}
 .our-skills .skill h3{
   display: flex;
   justify-content: space-between;
-  color: var(--main-color);
+  color: rgb(112, 112, 112);
+  font-size: 15px;
 }
 .our-skills .skill h3 span{
   font-size: 12px;
@@ -849,7 +853,8 @@ our skills
   left: 0;
   top: 0;
   height: 100%;
-  background-color: #009688;
+  background-color: var(--main-color);
+  border-radius: .3rem;
 }
 
 /*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
