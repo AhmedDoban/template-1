@@ -820,7 +820,37 @@ our skills
   display: flex;
   align-items: center;
 }
-
+@media  (max-width:991px) {
+  .our-skills img{
+    display: none;
+  }
+}
+.our-skills .skills{
+  flex: 1;
+}
+.our-skills .skill h3{
+  display: flex;
+  justify-content: space-between;
+  color: var(--main-color);
+}
+.our-skills .skill h3 span{
+  font-size: 12px;
+  padding: 5px;
+  color: #777;
+}
+.our-skills .skill .the-progress{
+  height: 10px;
+  background-color: #eee;
+  border-radius: .3rem;
+  position: relative;
+}
+.our-skills .skill .the-progress span{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: #009688;
+}
 
 /*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
 Animation
