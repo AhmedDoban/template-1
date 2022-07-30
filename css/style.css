@@ -1064,6 +1064,132 @@ events
   }
 }
 /*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+pricing
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.pricing{
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+  background-color: var(--main-background-color);
+  position: relative;
+}
+.pricing .container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  gap: 30px;
+}
+.pricing .box{
+  background-color: #fff;
+  border-radius: 1rem;
+  position: relative;
+  box-shadow: 10px 12px 100px 10px rgba(186, 186, 186, 0.288)  ;
+  transition: var(--main-transition);
+  z-index: 1;
+  text-align: center;
+  overflow: hidden;
+}
+.pricing .box::before ,.pricing .box::after{
+  content: "";
+  position: absolute;
+  background-color: #f6f6f6;
+  z-index: -1;
+  width: 0%;
+  height: 50%;
+  transition: var(--main-transition);
+}
+.pricing .box::before{
+  top: 0;
+  left: 0;
+}
+.pricing .box::after{
+  right: 0;
+  bottom: 0;
+}
+.pricing .box:hover::before,
+.pricing .box:hover::after{
+  width: 100%;
+}
+@media (min-width:1200px) {
+  .pricing .popular{
+    top: -20px;
+  }
+}
+.pricing .box.popular .label{
+  position: absolute;
+  writing-mode: vertical-rl;
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 10px 10px 60px 10px;
+  font-size: 18px;
+  right: 20px;
+  width: 40px;
+}
+.pricing .box.popular .label::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-color: transparent transparent #fff  transparent;
+  border-style: solid;
+  border-width: 20px ;
+  transition: var(--main-transition);
+}
+.pricing .box.popular:hover .label::before{
+  border-color: transparent transparent #f6f6f6  transparent;
+}
+.pricing .box .title{
+  color: var(--main-color);
+  font-size: 30px;
+  margin: 30px auto;
+  font-weight: bold;
+}
+.pricing .box img{
+  width: 80px;
+  margin-bottom: 30px;
+}
+.pricing .box .price{
+  margin-bottom: 20px;
+}
+.pricing .box .price span:nth-child(1){
+  display: block;
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 60px;
+  margin-bottom: 5px;
+
+}
+.pricing .box .price span:nth-child(2){
+  color: var(--main-p-color);
+}
+.pricing .box > ul{
+  text-align: left;
+}
+.pricing .box > ul > li{
+  padding: 20px;
+  border-top: 1px solid #eee;
+}
+.pricing .box > ul > li::before{
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 10px;
+  color: var(--main-color);
+}
+.pricing .box a{
+  display: block;
+  width: fit-content;
+  padding: 15px 20px;
+  color: var(--main-color);
+  margin: 30px auto;
+  border: 2px solid var(--main-color);
+  border-radius: 1rem;
+  transition: var(--main-transition);
+}
+
+.pricing .box a:hover{
+  background-color: var(--main-color);
+  color: #fff;
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
 Animation
 ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
 @keyframes move-up {
