@@ -1004,8 +1004,65 @@ events
   font-size: 19px;
   line-height: 1.7;
 }
+.events .subscribe{
+  width: 100%;
+  margin-top: 50px;
+}
+.events .subscribe form{
+  background-color: #f6f5f5f5;
+  width: 600px;
+  margin: 20px auto;
+  padding: 30px 20px;
+  border-radius: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 
+}
+.events .subscribe form input[type="email"]{
+  flex: 1;
+  padding: 20px;
+  border: none;
+  border-radius: 2.5rem;
+  caret-color: var(--main-color);
+}
+.events .subscribe form input[type="email"]:focus{
+  outline: none;
+}
+.events .subscribe form input[type="email"]::placeholder{
+  transition: opacity var(--main-transition);
+}
+.events .subscribe form input[type="email"]:focus::placeholder{
+  opacity: 0;
+}
+.events .subscribe form input[type="submit"]{
+  border: none;
+  padding: 20px;
+  background-color: var(--main-color);
+  color: #fff;
+  border-radius: 2.5rem;
+}
+.events .subscribe form input[type="submit"]:hover{
+  background-color: #009688;
+}
+@media(max-width:767px){
+  .events .subscribe form{
+    max-width: 100%;
+    border-radius: 0;
+    flex-direction: column;
+    padding: 15px;
+  }
+  .events .subscribe form input[type="email"]{
+    border-radius: 0;
+    width: 100%;
 
+  }
+  .events .subscribe form input[type="submit"]{
+    border-radius: 1rem;
+    width: 100%;
+  }
+}
 /*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
 Animation
 ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
