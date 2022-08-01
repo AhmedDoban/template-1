@@ -1031,7 +1031,7 @@ events
   outline: none;
 }
 .events .subscribe form input[type="email"]::placeholder{
-  transition: opacity var(--main-transition);
+  transition: var(--main-transition);
 }
 .events .subscribe form input[type="email"]:focus::placeholder{
   opacity: 0;
@@ -1350,6 +1350,7 @@ discount
   position: relative;
   z-index: 1;
   color: white;
+  animation: change-background 10s linear infinite;
 }
 .discount .left::before{
   content: "";
@@ -1380,10 +1381,71 @@ discount
   align-items: center;
   flex-basis: 50%;
 }
+.discount .form .input{
+  display: block;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  caret-color: var(--main-color);
+  border-bottom: 1px solid #ccc;
+  background-color: #f9f9f9;
+  margin-bottom: 25px;
+  border-radius: .25rem;  
+  transition: var(--main-transition);
+}
+
+.discount .form .input:focus{ 
+  border-bottom: 1px solid var(--main-color);
+  border-radius: .5rem;
+
+}
+
+.discount textarea.input{  
+  resize: none;
+  height: 200px;
+}
+.discount .input:focus{
+  outline: none;
+}
+.discount .input::placeholder{
+  transition: var(--main-transition);
+}.discount .input:focus::placeholder{
+  opacity: 0;
+}
+.discount .form input[type="submit"]{
+  display: block;
+  width: 100%;
+  padding: 15px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--main-color);
+  border-radius: 1rem;
+  transition: var(--main-transition);
+}
+.discount .form input[type="submit"]:hover{
+  background-color: var(--main-color-hover);
+}
 /*discount content general*/
 .discount .content{
   padding: 0 20px;
   text-align: center;
+}
+.discount .content h2{
+  margin-bottom: 30px;
+}
+@media (max-width: 991px) {
+  .discount .right{
+    flex-basis: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .discount .left{
+    flex-basis: 100%;
+
+  }
 }
 /*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
 Animation
@@ -1455,4 +1517,13 @@ Animation
       width: 200%;
       height: 200%;
     }
+}
+@keyframes change-background {
+  0%,
+  100% {
+    background-image: url("../imgs/discount-background1.jpg");
+  }
+  50% {
+    background-image: url("../imgs/discount-background2.jpg");
+  }
 }
