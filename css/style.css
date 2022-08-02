@@ -1229,7 +1229,7 @@ video
 
 .video .left ul li span{
   display: block;
-  color: #777;
+  color: var(--main-p-color);
   margin-top: 10px;
 }
 .video .right {
@@ -1472,13 +1472,13 @@ footer
   display: flex;
 }
 .footer .box ul.social li a{
-  background-color: #777;
+  background-color: var(--main-p-color);
   color: #ccc;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   font-size: 20px;
   transition: var(--main-transition);
   margin: 20px 0;
@@ -1499,8 +1499,34 @@ footer
 }
 .footer .box .text{
   line-height: 1.7;
+  color: var(--main-p-color);
   }
 
+/*2'nd box*/
+.footer .box ul.links li {
+  padding: 15px 0;
+  transition: var(--main-transition);
+} 
+.footer .box ul.links li:not(:last-child) {
+  border-bottom: 1px solid #444;
+}
+.footer .box ul.links li:hover{
+  padding-left: 10px;
+}
+.footer .box ul.links li  a{
+  color: var(--main-p-color);
+  transform: var(--main-transition);
+}
+.footer .box ul.links li:hover a{
+  color: #fff;
+}
+.footer .box ul.links li  a::before{
+  content: "\F101";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 10px;
+  color: var(--main-color);
+}
 /*4'th box*/
 .footer .footer-gallery  img{
   width: 78px;
