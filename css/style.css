@@ -1549,6 +1549,20 @@ footer
   border: 3px solid white;
   margin: 2px;
 }
+@media (max-width: 991px) {
+  .footer{
+   text-align: center;
+  }
+  .footer .box ul.social{
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .box .line {
+    flex-direction: column;
+  }
+  .footer .box .line i{
+    margin-bottom: 10px;
+}
 
 /*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
 Animation
