@@ -1448,6 +1448,67 @@ discount
   }
 }
 /*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+footer
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+/*first box*/
+.footer{
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+  background-color: #191919;
+  color: #fff;
+}
+.footer .container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+  gap: 40px;
+}
+.footer .box h3{
+  font-size: 50px;
+  font-weight: bold;
+  color: var(--main-color);
+  font-family: "Sofia";
+}
+.footer .box ul.social{
+  display: flex;
+}
+.footer .box ul.social li a{
+  background-color: #777;
+  color: #ccc;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  transition: var(--main-transition);
+  margin: 20px 0;
+  margin-right: 10px;
+  border-radius: .5rem;
+}
+.footer .box ul.social li a:hover.facebook{
+  background-color: var(--main-color);
+  color: #fff;
+}
+.footer .box ul.social li a:hover.twitter{
+  background-color: var(--main-color-hover);
+  color: #fff;
+}
+.footer .box ul.social li a:hover.youtube{
+  background-color: red;
+  color: #fff;
+}
+.footer .box .text{
+  line-height: 1.7;
+  }
+
+/*4'th box*/
+.footer .footer-gallery  img{
+  width: 78px;
+  border: 3px solid white;
+  margin: 2px;
+}
+
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
 Animation
 ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
 @keyframes move-up {
