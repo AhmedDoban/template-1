@@ -1527,6 +1527,22 @@ footer
   margin-right: 10px;
   color: var(--main-color);
 }
+/*3'rd box*/
+.footer .box .line {
+  display: flex;
+  color: var(--main-p-color);
+  align-items: center;
+  margin-bottom: 30px;
+}
+.footer .box .line i {
+  color: var(--main-color);
+  font-size: 25px;
+  margin-right: 10px;
+}
+.footer .box .line .info {
+  line-height: 1.7;
+  flex: 1;
+}
 /*4'th box*/
 .footer .footer-gallery  img{
   width: 78px;
