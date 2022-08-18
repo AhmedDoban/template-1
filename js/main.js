@@ -1,13 +1,10 @@
 // scrol to the top
 let ScrollToTop = document.querySelector(".scroll-to-top");
 window.onscroll = function () {
-  if (window.scrollY < 150) {
-    ScrollToTop.style.cssText = "display:none;opacity:0.2";
-  }
   if (window.scrollY >= 150) {
-    ScrollToTop.style.cssText = "display:block;opacity:0.8";
+    ScrollToTop.style.cssText = "display:block !important";
   } else {
-    ScrollToTop.style.cssText = "display:none;opacity:0";
+    ScrollToTop.style.cssText = "display:none";
   }
 };
 ScrollToTop.onclick = function () {

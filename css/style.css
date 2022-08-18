@@ -135,7 +135,6 @@ a {
   transition-delay: 0.5s;
 }
 .scroll-to-top {
-  display: none;
   background-color: var(--main-color);
   padding: 15px 17px;
   color: #fff;
@@ -145,14 +144,12 @@ a {
   bottom: 15px;
   right: 15px;
   transition: var(--main-transition);
-  opacity: 0;
+  display: none !important;
 }
 .scroll-to-top:hover {
   background-color: var(--main-color-hover);
   animation: var(--animation-bouncing);
-  opacity: 1 !important;
-}
-
+} 
 /*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
 Header
 ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
